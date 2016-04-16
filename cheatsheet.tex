@@ -33,6 +33,7 @@
 
 \usepackage{url} % Required for the \url command to easily display URLs
 \usepackage{wrapfig}
+\usepackage{tikz}
 
 \usepackage[ % This block contains information used to annotate the PDF
 colorlinks=false, 
@@ -56,6 +57,7 @@ pdfkeywords={Random Software, Cheatsheet}
 \begin{document}
 
 \begin{picture}(297,210) % Create a container for the page content
+\tikz[remember picture,overlay] \node[opacity=0.3,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{background-img.png}};
 
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION 
@@ -80,7 +82,7 @@ pdfkeywords={Random Software, Cheatsheet}
 
   \sectiontitle{\textit{Apresentando...}}
 
-Strife of Mythology é um Tower Defense com tema mitológico! O jogo todo é uma grande \textit{endurance}, onde você jogará até ser derrotado. Suas torres evoluirão e se tornarão cada vez mais avançadas, cada uma com suas peculiaridades. Seus inimigos, que virão diretamente da antiga mitologia (principalmente nórdica e grega), serão mais vulneráveis a certos tipos de torres, e você deverá utilizar essa característica para poder chegar a estágios cada vez mais avançados.
+Strife of Mythology é um Tower Defense de tema mitológico. Suas torres evoluirão e se tornarão cada vez mais avançadas e poderosas, havendo possibilidades diferentes de torres, cada uma com suas peculiaridades. Seus inimigos, que virão diretamente da antiga mitologia (principalmente nórdica e grega), serão mais vulneráveis a certos tipos de torres, e você deverá utilizar esse fato para progredir durante o jogo.
 
 
 \vspace{\baselineskip} % Whitespace before the next section
@@ -93,7 +95,7 @@ Strife of Mythology é um Tower Defense com tema mitológico! O jogo todo é uma
   \item [Modo \textit{endurance}] Nunca acaba! A não ser que você seja derrotado.
   \item [Torres especialistas] Certas torres são melhores contra certos tipos de inimigos.
   \item [Revenda de torres] Caso se arrependa de uma compra, é possível revender a torre.
-  \item [Unico jogador] Você jogará sozinho...
+  \item [Unico jogador] SoMTD deve ser jogado sozinho.
   \item [Sem \textit{mazing}] Os monstros fazem sempre o mesmo caminho, que não poderá ser bloqueado.
   \item [\textit{Respawn} fixo] Os monstros sempre nascem do mesmo lugar.
   \item [\textit{Vida}] O jogador começa com o valor fixo de 50 pontos de vida. Sempre que um monstro terminar o caminho predeterminado, o jogador perde uma vida e o mesmo monstro renasce do início do mapa.
@@ -116,17 +118,17 @@ Strife of Mythology é um Tower Defense com tema mitológico! O jogo todo é uma
 %----------------------------------------------------------------------------------------
 
 \sectiontitle{Esquema de controle e interface}
-Strife of Mythology deve ser jogado com o auxílio de um mouse e teclado. As chaves de acesso rápido (também chamadas de \textit{hotkeys}) facilitarão a jogabilidade, e serão possíveis com a utilização de um teclado (esses atalhos irão, por exemplo, possibilitar qual torre construir, revender uma torre rapidamente, entre outras coisas). Com o mouse, o jogador escolhe essencialmente as torres e as posições de construção.
+Strife of Mythology deve ser jogado com o auxílio de um mouse e teclado. Os atalhos para acesso rápido (também chamadas de \textit{hotkeys}) facilitarão a jogabilidade, e serão possíveis com a utilização de um teclado (esses atalhos irão, por exemplo, possibilitar qual torre construir, revender uma torre rapidamente, entre outras coisas). Com o mouse, o jogador escolhe essencialmente as torres e as posições de construção.
 
-Sobre a jogabilidade em si, o jogador saberá como terminar uma ação desejada através de uma interface intuitiva. Um \textit{destaque} (também chamado de \textit{highlight} e \textit{mouseover}) ocorrerá sempre que o ponteiro do mouse passar sobre uma torre. Dessa forma, o jogador poderá escolher a torre que será evoluída ou revendida passando o mouse sobre, e, ao notar que o ponteiro está na torre desejada, selecioná-la através de um click.
+Sobre a jogabilidade, o jogador saberá como terminar uma ação desejada através de uma interface intuitiva. Um \textit{destaque} (também chamado de \textit{highlight} e \textit{mouseover}) ocorrerá sempre que o ponteiro do mouse passar sobre uma torre. Dessa forma, o jogador poderá escolher a torre que será evoluída ou revendida passando o mouse sobre.
 
-Sobre outros aspectos da interface, o jogo ainda contará com um menu com diversas opções, possibilitando mudança no volume do áudio do jogo, e visualização de uma lista com todas as chaves de acesso rápido disponíveis.
+Sobre outros aspectos da interface, o jogo ainda contará com um menu com diversas opções, possibilitando mudanças no volume do áudio do jogo, e visualização de uma lista com todos os comandos e atalhos disponíveis.
 
 %----------------------------------------------------------------------------------------
 %	HEADING FIVE
 %----------------------------------------------------------------------------------------				
 					
-\sectiontitle{Descrição Tecnológica} % Heading five
+% \sectiontitle{Descrição Tecnológica} % Heading five
 \vspace{\baselineskip} % Whitespace before the next section
 %----------------------------------------------------------------------------------------
 
@@ -147,7 +149,7 @@ Sobre outros aspectos da interface, o jogo ainda contará com um menu com divers
 %----------------------------------------------------------------------------------------	
 
 \sectiontitle{Público e Plataforma Alvo}
-O jogo tem como principal alvo os entusiastas de \textit{tower defenses} e das diversas mitologias antigas. Por conta das características da arte do jogo, o SoMTD não é muito recomendado para crianças, mas sim para um público mais maduro. Além disso, por conta do fator desafio, o jogo provavelmente atrairá a atenção de jogadores \textit{gamers} em geral.
+O jogo tem como principal alvo os entusiastas de \textit{tower defenses} e de jogos de tema mitológico. Por conta das características da arte do jogo, o SoMTD não é muito recomendado para crianças, mas sim para um público mais maduro. Além disso, por conta do fator desafio, o jogo provavelmente atrairá a atenção de \textit{gamers} em geral.
 
 
 \vspace{\baselineskip} % Whitespace before the next section
@@ -156,7 +158,7 @@ O jogo tem como principal alvo os entusiastas de \textit{tower defenses} e das d
 %	IMPORTANT FILES
 %----------------------------------------------------------------------------------------
 
-\sectiontitle{Relação dos Logotipos}
+% \sectiontitle{Relação dos Logotipos}
 %
 % \begin{figure}
 %   \begin{center}
@@ -167,11 +169,11 @@ O jogo tem como principal alvo os entusiastas de \textit{tower defenses} e das d
 %
 % \includegraphics[scale=0.2]{neovim-logo.png}
 
-\vspace{\baselineskip} % Whitespace before the next section
-\vspace{\baselineskip} % Whitespace before the next section
+% \vspace{\baselineskip} % Whitespace before the next section
+% \vspace{\baselineskip} % Whitespace before the next section
 
 \sectiontitle{Equipe}
-Você pode nos encontrar na UnB - Campus Gama. Sugestões e novas sugestões devem ser abertas via \textit{issues} em \href{https://github.com/StrifeOfMythologyTD/SoMTD/issues}{nosso repositório}.
+Você pode nos encontrar na UnB - Campus Gama. Sugestões e novas funcionalidades devem ser sugeridas via \textit{issues} em \href{https://github.com/StrifeOfMythologyTD/SoMTD/issues}{nosso repositório}. Nosso e-mail para contato é: \href{mailto:strifeofmythology@gmail.com}{strifeofmythology@gmail.com}
 
 \end{minipage} % End the third column of text
 } % End the third division of the page
